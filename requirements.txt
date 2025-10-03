@@ -27,5 +27,5 @@ SQLAlchemy==2.0.43
 typing_extensions==4.7.1
 
 factory_boy==3.3.0
-Faker==37.8.0
+Faker==6.6.1
 tzdata==2025.2
