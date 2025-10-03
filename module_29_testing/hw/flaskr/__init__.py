@@ -1,4 +1,4 @@
-import datetime, request
+import datetime
 import os
 import requests
 
