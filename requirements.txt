@@ -11,3 +11,11 @@ charset-normalizer==3.4.3
 idna==2.5
 requests==2.18.0
 urllib3==1.21.1
+
+blinker==1.9.0
+click==8.3.0
+Flask==3.1.2
+itsdangerous==2.2.0
+Jinja2==3.1.6
+MarkupSafe==3.0.3
+Werkzeug==3.1.3
