@@ -44,5 +44,5 @@ ruamel.yaml==0.15.13
 ruamel.yaml.clib==0.2.8
 seed-isort-config==2.2.0
 SQLAlchemy==2.0.37
-urllib3==2.3.0
+urllib3==2.0.7
 virtualenv==20.34.0
