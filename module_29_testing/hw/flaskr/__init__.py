@@ -1,7 +1,7 @@
 import datetime
 import os
-import requests
 
+import requests
 from flask import Flask, request
 from flask_sqlalchemy import SQLAlchemy
 
