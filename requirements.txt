@@ -1,6 +1,5 @@
 amqp==5.3.1
 aspy.refactor-imports==3.0.2
-async-timeout==5.0.1
 attrs==25.3.0
 billiard==4.2.1
 black==25.9.0
