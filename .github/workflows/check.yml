@@ -30,13 +30,13 @@ jobs:
       run: pytest tests/
     
     - name: Run mypy
-      run: mypy flaskr/
+      run: mypy module_29_testing/hw/flaskr/
     
     - name: Run black
-      run: black --diff --check flaskr/
+      run: black --diff --check module_29_testing/hw/flaskr/
     
     - name: Run isort
-      run: isort --check-only flaskr/
+      run: isort --check-only module_29_testing/hw/flaskr/
     
     - name: Run flake8
-      run: flake8 flaskr/
+      run: flake8 module_29_testing/hw/flaskr/
