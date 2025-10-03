@@ -38,7 +38,7 @@ pillow==9.5.0
 postgres==4.0
 pycodestyle==2.10.0
 pytest==5.4
-PyYAML==6.0.3
+PyYAML==6.0.1
 requests==2.32.3
 ruamel.yaml==0.18.15
 ruamel.yaml.clib==0.2.14
