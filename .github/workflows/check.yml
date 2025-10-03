@@ -30,13 +30,13 @@ jobs:
       run: pytest module_29_testing/hw/tests/
     
     - name: Run mypy
-      run: mypy src/
+      run: mypy flaskr/
     
     - name: Run black
-      run: black --diff --check src/
+      run: black --diff --check flaskr/
     
     - name: Run isort
-      run: isort --check-only src/
+      run: isort --check-only flaskr/
     
     - name: Run flake8
-      run: flake8 src/
+      run: flake8 flaskr/
