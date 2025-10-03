@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Новая парковка</title>
+</head>
+<body>
+    <form action="/parkings", method="post" >
+        <table>
+            <caption> Новая парковка <p> </caption>
+            <tr> <td> Адрес: <p> </td> <td> <input name="address"> <p> <td> </td> </tr>
+            <tr> <td> Состояние (Открыта/Закрыта): <p> </td> <td> <input type="checkbox" name="opened"> <p> <td> </td> </tr>
+            <tr> <td> Число парковочных мест: <p> </td> <td> <input name="count_places"> <p> <td> </td> </tr>
+            <tr> <td> Число свободных парковочных мест <p> </td> <td> <input name="count_available_places"> <p> <td> </td> </tr>
+            <td colspan="2" style="text-align: center; vertical-align: middle;">  <button type="submit"> Создать </button>  </td>
+        </table>
+
+    </form>
+</body>
+</html>
