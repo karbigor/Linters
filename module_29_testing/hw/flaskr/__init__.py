@@ -41,7 +41,7 @@ def create_app(test_config=None):
         db.create_all()
         if new:
             start_data = []
-            start_data.append(Client(name='Igor', 
+            start_data.append(Client(name='Igor',
                                      surname='Karbushev',
                                      credit_card='7498269',
                                      car_number='g345hh'))
