@@ -37,3 +37,6 @@ jobs:
     
     - name: Run flake8
       run: flake8 module_29_testing/hw/flaskr/
+
+    - name: Run mypy
+      run: mypy module_29_testing/hw/flaskr/
