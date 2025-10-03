@@ -1,4 +1,6 @@
-import os, datetime, requests
+import datetime, request
+import os
+import requests
 
 from flask import Flask, request
 from flask_sqlalchemy import SQLAlchemy
