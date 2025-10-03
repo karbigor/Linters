@@ -39,7 +39,7 @@ postgres==4.0
 pycodestyle==2.10.0
 pytest==5.4
 PyYAML==6.0.1
-requests==2.32.3
+requests==2.18.0
 ruamel.yaml==0.18.15
 ruamel.yaml.clib==0.2.14
 seed-isort-config==2.2.0
