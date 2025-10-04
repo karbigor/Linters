@@ -47,4 +47,4 @@ jobs:
         fi
 
     - name: Run mypy
-      run: mypy --config-file mypy.ini --show-config module_29_testing/hw/flaskr/
+      run:  module_29_testing/hw/flaskr/mypy -v .
