@@ -1,6 +1,5 @@
+from ..flaskr.models import Client, Client_Parking, Parking
 from .factories import ClientFactory, ParkingFactory
-from ..flaskr.models import Client, Parking, Client_Parking
-
 
 #Здесь можно создавать новые сущности через API, что вроде бы логично, однако придётся использовать объекты созданные
 # фабрикой как словари, что, вроде моветон. Для альтернативы сделал создание сущностей прямо в базу.

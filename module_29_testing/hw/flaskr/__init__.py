@@ -1,5 +1,7 @@
-import os, datetime, requests
+import datetime
+import os
 
+import requests
 from flask import Flask, request
 from flask_sqlalchemy import SQLAlchemy
 
@@ -35,7 +37,7 @@ def create_app(test_config=None):
 
     db.init_app(app)
     with app.app_context():
-        from .models import Client, Parking, Client_Parking
+        from .models import Client, Client_Parking, Parking
         db.create_all()
         if new:
             start_data = []

@@ -1,6 +1,8 @@
 import json
+
 import pytest
-from ..flaskr.models import Client, Parking, Client_Parking
+
+from ..flaskr.models import Client, Client_Parking, Parking
 
 
 @pytest.mark.parametrize('getpoints', ['/clients', '/clients/1'])

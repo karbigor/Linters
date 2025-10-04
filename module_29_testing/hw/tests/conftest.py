@@ -1,9 +1,15 @@
-import os, datetime, requests, pytest
+import datetime
+import os
 
+import pytest
+import requests
 from flask import Flask, request
 from flask_sqlalchemy import SQLAlchemy
-from ..flaskr.__init__ import create_app, db as _db
-from ..flaskr.models import Client, Parking, Client_Parking
+
+from ..flaskr.__init__ import create_app
+from ..flaskr.__init__ import db as _db
+from ..flaskr.models import Client, Client_Parking, Parking
+
 
 @pytest.fixture
 def app():

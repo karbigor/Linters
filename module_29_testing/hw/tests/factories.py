@@ -1,10 +1,12 @@
-import factory
-import factory.fuzzy as fuzzy
 import random
 
+import factory
+import factory.fuzzy as fuzzy
 
-from ..flaskr.__init__ import create_app, db as _db
-from ..flaskr.models import Client, Parking, Client_Parking
+from ..flaskr.__init__ import create_app
+from ..flaskr.__init__ import db as _db
+from ..flaskr.models import Client, Client_Parking, Parking
+
 
 class ClientFactory(factory.alchemy.SQLAlchemyModelFactory):
     class Meta:
