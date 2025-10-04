@@ -16,12 +16,11 @@ class Client(db.Model):
         return f"Клиент {self.name} {self.surname}"
 
     def to_json(self) -> Dict[str, Any]:
-        return {c.name: getattr(self, c.name) for c in
-                self.__table__.columns}
+        return {c.name: getattr(self, c.name) for c in self.__table__.columns}
 
 
 class Parking(db.Model):
-    __tablename__ = 'parkings'
+    __tablename__ = "parkings"
 
     id = db.Column(db.Integer, primary_key=True)
     address = db.Column(db.String(100), nullable=False)
