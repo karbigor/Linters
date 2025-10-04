@@ -47,4 +47,6 @@ jobs:
         fi
 
     - name: Run mypy
-      run:  module_29_testing/hw/flaskr/mypy -v .
+      run:  | 
+        module_29_testing/hw/flaskr/
+        mypy -v .
