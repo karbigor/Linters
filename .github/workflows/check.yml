@@ -48,5 +48,5 @@ jobs:
 
     - name: Run mypy
       run:  | 
-        module_29_testing/hw/flaskr/
+        cd module_29_testing/hw/flaskr/
         mypy -v .
