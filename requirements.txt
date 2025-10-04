@@ -6,7 +6,7 @@ click==8.1.8
 factory_boy==3.3.0
 Faker==6.6.1
 Flask==2.2.5
-Flask-SQLAlchemy==3.1.1
+Flask-SQLAlchemy==3.0.5
 greenlet==3.2.4
 idna==3.10
 isort==5.9.3
