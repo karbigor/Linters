@@ -4,7 +4,7 @@ from .__init__ import db
 
 
 class Client(db.Model):
-    __tablename__ = 'clients'
+    __tablename__ = "clients"
 
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String(50), nullable=False)
@@ -33,12 +33,11 @@ class Parking(db.Model):
         return f"Парковка {self.address}"
 
     def to_json(self) -> Dict[str, Any]:
-        return {c.name: getattr(self, c.name) for c in
-                self.__table__.columns}
+        return {c.name: getattr(self, c.name) for c in self.__table__.columns}
 
 
 class Client_Parking(db.Model):
-    __tablename__ = 'client_parking'
+    __tablename__ = "client_parking"
     __table_args__ = (db.UniqueConstraint('client_id',
                                           'parking_id',
                                           name='unique_client_parking'),)
@@ -55,5 +54,4 @@ class Client_Parking(db.Model):
         return f"Клиент-Парковка {self.client_id} {self.parking_id}"
 
     def to_json(self) -> Dict[str, Any]:
-        return {c.name: getattr(self, c.name) for c in
-                self.__table__.columns}
+        return {c.name: getattr(self, c.name) for c in self.__table__.columns}
