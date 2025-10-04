@@ -40,7 +40,7 @@ jobs:
 
     - name: Check if config exists
       run: |
-        if [ -f mypy.ini ]: then
+        if [ -f mypy.ini ]; then
           echo "mypy.ini found"
         else 
           echo "mypy.ini not found"
