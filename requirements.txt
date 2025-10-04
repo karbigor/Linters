@@ -22,7 +22,7 @@ pycodestyle==2.8.0
 pyflakes==2.4.0
 requests==2.18.0
 SQLAlchemy==2.0.43
-tomli==2.2.1
+tomli==2.0.1
 types-requests==2.32.4.20250913
 typing_extensions==4.15.0
 tzdata==2025.2
