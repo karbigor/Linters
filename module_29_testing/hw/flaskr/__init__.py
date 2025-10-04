@@ -41,27 +41,27 @@ def create_app(test_config=None):
         db.create_all()
         if new:
             start_data = [Client(name='Igor',
-                                     surname='Karbushev',
-                                     credit_card='7498269',
-                                     car_number='g345hh'),
+                                 surname='Karbushev',
+                                 credit_card='7498269',
+                                 car_number='g345hh'),
                           Client(name='Zarek',
-                                     surname='Danelian',
-                                     credit_card='9879856',
-                                     car_number='a951ky'),
+                                 surname='Danelian',
+                                 credit_card='9879856',
+                                 car_number='a951ky'),
                           Parking(address='Ленина, 1',
-                                      opened=True,
-                                      count_places=35,
-                                      count_available_places=34),
+                                  opened=True,
+                                  count_places=35,
+                                  count_available_places=34),
                           Parking(address='Бабушкина, 35',
-                                      opened=True,
-                                      count_places=63,
-                                      count_available_places=62),
+                                  opened=True,
+                                  count_places=63,
+                                  count_available_places=62),
                           Client_Parking(client_id=2,
-                                             parking_id=2,
-                                             time_in=datetime.datetime.now()),
+                                         parking_id=2,
+                                         time_in=datetime.datetime.now()),
                           Client_Parking(client_id=1,
-                                             parking_id=1,
-                                             time_in=datetime.datetime.now())]
+                                         parking_id=1,
+                                         time_in=datetime.datetime.now())]
             db.session.add_all(start_data)
             db.session.commit()
 
