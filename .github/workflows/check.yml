@@ -39,4 +39,4 @@ jobs:
       run: black --diff --check -l79 module_29_testing/hw/flaskr/
 
     - name: Run mypy
-      run: mypy --config-file mypy.ini module_29_testing/hw/flaskr/
+      run: mypy --config-file module_29_testing/hw/flaskr/mypy.ini module_29_testing/hw/flaskr/
