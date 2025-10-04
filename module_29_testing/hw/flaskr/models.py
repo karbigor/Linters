@@ -19,6 +19,7 @@ class Client(db.Model):
         return {c.name: getattr(self, c.name) for c in
                 self.__table__.columns}
 
+
 class Parking(db.Model):
     __tablename__ = 'parkings'
 
@@ -35,9 +36,11 @@ class Parking(db.Model):
         return {c.name: getattr(self, c.name) for c in
                 self.__table__.columns}
 
+
 class Client_Parking(db.Model):
     __tablename__ = 'client_parking'
-    __table_args__ = (db.UniqueConstraint('client_id', 'parking_id', name='unique_client_parking'),)
+    __table_args__ = (db.UniqueConstraint(
+        'client_id', 'parking_id', name='unique_client_parking'),)
 
     id = db.Column(db.Integer, primary_key=True)
     client_id = db.Column(db.Integer, db.ForeignKey('clients.id'))
