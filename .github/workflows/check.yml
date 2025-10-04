@@ -38,5 +38,13 @@ jobs:
     - name: Run black
       run: black --diff --check -l79 module_29_testing/hw/flaskr/
 
+    - name: Check if config exists
+      run: |
+        if [ -f mypy.ini ]: then
+          echo "mypy.ini found"
+        else 
+          echo "mypy.ini not found"
+        fi
+
     - name: Run mypy
-      run: mypy --config-file module_29_testing/hw/flaskr/mypy.ini module_29_testing/hw/flaskr/
+      run: mypy module_29_testing/hw/flaskr/
