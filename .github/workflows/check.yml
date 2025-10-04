@@ -27,7 +27,7 @@ jobs:
         pip install pytest mypy black isort flake8
     
     - name: Run pytest
-      run: pytest module_29_testing/hw/flaskr/tests/
+      run: pytest module_29_testing/hw/tests/
     
     - name: Run isort
       run: isort --check-only module_29_testing/hw/flaskr/
